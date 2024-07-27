@@ -38,5 +38,3 @@ layout: default
     * Check all outfit objects are separated
 1. In another file, import the "Export Single Outfit" export with the "Separate by SMR data" "Use PMX Armature" and "Skip modifying shapekeys" option selected
     * Make sure no errors come up during import
-
-[return to wiki home](https://github.com/FlailingFog/KK-Blender-Porter-Pack/blob/master/wiki/Wiki%20top.md)

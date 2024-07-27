@@ -3,14 +3,15 @@ layout: default
 ---
 
 ## Usage Instructions for V7
-1. Install the [HF Patch for Koikatsu](https://github.com/ManlyMarco/KK-HF_Patch), or the [HF Patch for Koikatsu Sunshine](https://github.com/ManlyMarco/KKS-HF_Patch). **Pre-modded repacks will not work** unless you update your plugins with KKManager or install the HF patch
+1. Install the **[HF Patch for Koikatsu](https://github.com/ManlyMarco/KK-HF_Patch)**, or the **[HF Patch for Koikatsu Sunshine](https://github.com/ManlyMarco/KKS-HF_Patch)**.  
+**Pre-modded repacks will not work** unless you update your plugins with KKManager or install the HF patch
 1. Find your Koikatsu install directory and drag the KKBP exporter into the /bepinex/plugins/ folder
 1. Start Koikatsu and open the Character Maker
 1. You'll see this UI at the top now. If you are using KKS, you'll get the left panel. If you are using KK you'll get the right panel  
 ![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/exportpanel.png)
 1. Click the "Export Model for KKBP" button the top of the screen. This may take a few minutes depending on your computer hardware. A folder in your Koikatsu install directory will popup when the export is finished
 1. Open Blender 4.2. **Other versions are not guaranteed to work**
-1. Install [mmd_tools](https://extensions.blender.org/add-ons/mmd-tools/)
+1. Install **[mmd_tools](https://extensions.blender.org/add-ons/mmd-tools/)**
 1. Install KKBP Importer 7.0.0
 1. You'll see this UI in Blender now. Click on one of the buttons to allow KKBP to download an older version of blender  
 ![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/importpanel1.png)
