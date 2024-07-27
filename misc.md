@@ -53,6 +53,6 @@ After the Koikatsu model is imported into Unity, springbones from the [UniVRM Un
 
 In the below example, the right twintail is given springbones. The springbone script is added to the twintail bone at the end of the chain. The twintail chain has four bones in the chain: Joint2_002 > Joint3 > Joint4 > Joint5, so the springbone script is added to Joint5. The root bones along the chain are then added to the "Root bone elements" section on the right. There are three remaining bones, so the size is set to 3.
 
-![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/misc9.png)
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/misc9.jpg)
 
 [return to wiki home](https://github.com/FlailingFog/KK-Blender-Porter-Pack/blob/master/wiki/Wiki%20top.md)

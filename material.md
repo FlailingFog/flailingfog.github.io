@@ -8,11 +8,11 @@ layout: default
 ## The KKBP material setup
 Below is an overview of the KKBP material template. All textures in the .pmx export folder are loaded to the green textures node group below. The texture positions are set using the sliders in the purple group below. The textures are used in the Shader group in the middle to create light and dark versions of the material. The material knows when to show the light or dark version of the texture by using the Raw toon shading group. Finally, a rim is added to the output if it is enabled.
 
-![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat1.png)
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat1.jpg)
 
 Opening any Shader node group will show two node groups, a dark color group on the top and a light color group on the bottom. These colors are automatically set using the RGB information stored in the KK_MaterialData.json data (this file is located in the .pmx export folder). You can edit any of these colors or sliders for all Hair materials, Clothes materials, Body materials, etc.
 
-![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat2.png)
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat2.jpg)
 
 ## Plain Maintex vs Colored Maintex
 Plain Maintex files are a component that make up the Maintex you see in game. The Plain Maintex is combined with the colors you set in game and the colormask texture. All three combined create the full Colored Maintex. Colored Maintex files from the KKBP Exporter already have the colors applied and also include any additional overlays, so it combines the Plain Maintex + Colormask files + colors + overlay files together. If you want to change the colors on the fly, you can swap to the plain maintex by setting the "Use colored maintex" and "Ignore colormask" sliders below to 0 instead of 1.
@@ -55,7 +55,7 @@ The default import comes with settings that make the face area behind the gag ey
 ## Smoothing out the look of the face with Generated Face Normals (GFN)
 Some face shapekeys can look pretty bad around the mouth with certain lighting
 
-![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat8.png)
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat8.jpg)
 
 This can be avoided by changing the "Raw Shading" group in the face material to the "Raw Shading (Face)" group instead
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat9.png)
