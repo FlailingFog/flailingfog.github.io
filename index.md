@@ -3,6 +3,9 @@ layout: default
 ---
 
 ## Usage Instructions for V7
+*The last known working configuration for **Koikatsu / Koikatsu Party** as of writing this text is HF Patch v3.28, Koikatsu 5.1, Blender 4.2.0, KKBP Importer 7.0.0, KKBP Exporter v4.30, mmd_tools 4.2.2  
+The last known working configuration for **Koikatsu Sunshine** as of writing this text is HF Patch for KKS v1.17, Koikatsu Sunshine 5.1, Blender 4.2.0, KKBP Importer 7.0.0, KKBP Exporter v4.30, mmd_tools 4.2.2*  
+
 1. Install the **[HF Patch for Koikatsu](https://github.com/ManlyMarco/KK-HF_Patch)**, or the **[HF Patch for Koikatsu Sunshine](https://github.com/ManlyMarco/KKS-HF_Patch)**.  
 **Pre-modded repacks will not work** unless you update your plugins with KKManager or install the HF patch
 1. Find your Koikatsu install directory and drag the KKBP exporter into the /bepinex/plugins/ folder
@@ -25,11 +28,6 @@ layout: default
 ![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/importpanel5.png)
 1. You can start using the model as is, but it is recommended to finalize the materials first. If you use the model as is, it will take a long time to compile all the shaders. If you finalize the materials then the shaders will compile very quickly. It also makes the shaders compile quickly if you decide to reimport the same model.  
 ![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/importpanel6.png)
-
-
-The last known working configuration for **Koikatsu / Koikatsu Party** as of writing this text is HF Patch v3.28, Koikatsu 5.1, Blender 4.2.0, KKBP Importer 7.0.0, KKBP Exporter v4.30, mmd_tools 4.2.2  
-The last known working configuration for **Koikatsu Sunshine** as of writing this text is HF Patch for KKS v1.17, Koikatsu Sunshine 5.1, Blender 4.2.0, KKBP Importer 7.0.0, KKBP Exporter v4.30, mmd_tools 4.2.2
-
 
 #### Exporting from Blender to fbx:
 
