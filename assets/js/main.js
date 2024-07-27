@@ -13,11 +13,11 @@ var sectionHeight = function() {
 $(window).resize(sectionHeight);
 
 $(function() {
-  $("section h1, section h2, section h3").each(function(){
-    $("nav ul").append("<li class='tag-tag1'><a href='a2'>texthere</a></li>");
-    //$("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + $(this).text() + "</a></li>");
-    //$(this).attr("id",$(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,''));
-    $(this).attr("id","okay");
+  $(function(){
+    $("nav ul").append("<li class='tag-aaa'><a href='#bbb'>ccc</a></li>");
+    // $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + $(this).text() + "</a></li>");
+    // $(this).attr("id",$(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,''));
+    // $(this).attr("id","okay");
     $("nav ul li:first-child a").parent().addClass("active");
   });
 
