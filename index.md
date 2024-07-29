@@ -14,8 +14,8 @@ The last known working configuration for **Koikatsu Sunshine** as of writing thi
 ![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/exportpanel.png)
 1. Click the "Export Model for KKBP" button the top of the screen. This may take a few minutes depending on your computer hardware. A folder in your Koikatsu install directory will popup when the export is finished
 1. Open Blender 4.2. **Other versions are not guaranteed to work**
-1. Install **[mmd_tools](https://extensions.blender.org/add-ons/mmd-tools/)**
-1. Install KKBP Importer 7.0.0
+1. Install **[mmd_tools](https://extensions.blender.org/add-ons/mmd-tools/)** in Blender
+1. Install KKBP Importer 7.0.0 in Blender
 1. You'll see this UI in Blender now. Click on one of the buttons to allow KKBP to download an older version of blender  
 ![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/importpanel1.png)
 1. After it is done downloading, you can click the "Import model" button  
@@ -26,14 +26,15 @@ The last known working configuration for **Koikatsu Sunshine** as of writing thi
 ![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/importpanel4.png)
 1. Check there were no errors during import in the scripting tab. A successful import will end in "KKBP import finished in XX minutes"  
 ![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/importpanel5.png)
-1. You can start using the model as is, but it is recommended to finalize the materials first. If you use the model as is, it will take a long time to compile all the shaders. If you finalize the materials then the shaders will compile very quickly. It also makes the shaders compile quickly if you decide to reimport the same model.  
+1. If there were no errors, you can start using the model as is, but it is recommended to finalize the materials first. If you use the model as is, it will take a long time to compile all the shaders. If you finalize the materials then the shaders will compile very quickly. It also makes the shaders compile quickly if you decide to reimport the same model. Finalizing the materials can take a few minutes depending on your hardware  
 ![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/importpanel6.png)
+1. If something doesn't look right and you don't see any errors in the log, check the [Wiki Home on the sidebar](wiki).
 
 #### Exporting from Blender to fbx:
 
 1. Click the Finalize Materials button in the KKBP panel  
 1. This does three things
-    * Bakes all of the materials to png files and saves them to the baked_files folder in your export folder
+    * Finalizes all of the materials to png files and saves them to the baked_files folder in your export folder
     * Creates an atlas file for your body / hair / clothes and saves them to the atlas_files folder in your export folder
     * Creates a new collection that uses the atlas
 1. Hide the original collection in the outliner and show the new collection

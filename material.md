@@ -6,13 +6,37 @@ layout: default
 
 
 ## The KKBP material setup
-Below is an overview of the KKBP material template. All textures in the .pmx export folder are loaded to the green textures node group below. The texture positions are set using the sliders in the purple group below. The textures are used in the Shader group in the middle to create light and dark versions of the material. The material knows when to show the light or dark version of the texture by using the Raw toon shading group. Finally, a rim is added to the output if it is enabled.
+Below is an overview of the KKBP material template. All textures in the .pmx export folder are loaded to the green textures node group below. The texture positions are set using the sliders in the purple group below. The textures are used in the Shader group in the middle to create light and dark versions of the material. The material knows when to show the light or dark version of the texture from the bsdf shader in the Raw toon shading group. A rim is added to the output if it is enabled. If the material has been finalized, the baked material png will be loaded at the end too.
 
-![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat1.jpg)
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat1.png)
 
-Opening any Shader node group will show two node groups, a dark color group on the top and a light color group on the bottom. These colors are automatically set using the RGB information stored in the KK_MaterialData.json data (this file is located in the .pmx export folder). You can edit any of these colors or sliders for all Hair materials, Clothes materials, Body materials, etc.
+After you import the model, the KKBP materials will have what I call the "heavyweight shader". With the heavyweight shader, you can click on any material,  find the "Baked image switch" shown above and set it to zero. Once it is set to zero, you can open the shader group by clicking on the square in the corner
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat2.png)
 
-![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat2.jpg)
+Opening the Shader node group will reveal two node groups, a light color group on the left and a dark color group on the right. These colors are automatically set using the RGB information stored in the KK_MaterialData.json data (this file is located in the .pmx export folder). You can freely edit any of these colors or sliders for all Hair materials, Clothes materials, Body materials, etc.
+
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat2p1.png)
+
+When you click the "Finalize Materials" button on the KKBP panel, all materials will be replaced with their lightweight shader version. This version of the material is a lot more performant and will load very quickly compared to the original material. 
+
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat2p2.png)
+
+If you want to go back to the heavyweight material to edit it again, you can set the material back to the -ORG version of the material.
+
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat2p3.png)
+
+Recall that you must also set the "Baked image switch" to zero on the heavyweight shader before you can edit it
+
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat2p4.png)
+
+Here I have updated the hair color on the heavyweight shader
+
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat2p5.png)
+
+To finalize the material again, just click the "Finalize Materials" button on the KKBP panel. The material will be re-finalized and the lightweight shader + atlas model will be updated.
+
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat2p6.png)
+
 
 ## Plain Maintex vs Colored Maintex
 Plain Maintex files are a component that make up the Maintex you see in game. The Plain Maintex is combined with the colors you set in game and the colormask texture. All three combined create the full Colored Maintex. Colored Maintex files from the KKBP Exporter already have the colors applied and also include any additional overlays, so it combines the Plain Maintex + Colormask files + colors + overlay files together. If you want to change the colors on the fly, you can swap to the plain maintex by setting the "Use colored maintex" and "Ignore colormask" sliders below to 0 instead of 1.
@@ -33,7 +57,7 @@ Eyes have a special material setup that allows you to change both of them at onc
 
 ## Special materials (Hair)
 Hair has a special material setup that allows you to change the like-colored hair materials at the same time.
-See the "Special materials (Eyes)" section above for how to give specific pieces of hair different colors.
+See the screenshot in the "Special materials (Eyes)" section above for how to give specific pieces of hair different colors.
 
 ## Special materials (Tears)
 Tears have a special material that uses a gradient to get a look similar to the in-game one. You can make the tears use an HDRI or a flat color instead by using the sliders in the Tears material.
@@ -65,14 +89,14 @@ And shading discontinuities on the neck can be fixed by going to the Body materi
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat10.png)
 
 ## Koikatsu color conversion
-The colors you see in Koikatsu are not the real colors being used, they're being saturated. In order to replicate the colors shown in koikatsu, all colors and images are run through the color_to_KK and image_to_KK functions in [modifymaterial.py](https://github.com/FlailingFog/KK-Blender-Porter-Pack/blob/master/importing/modifymaterial.py) to convert the base colors to the "real" colors seen visually in the game. This process is also run on all Maintex images.
+The colors you see in Koikatsu are not the real colors being used; they're actually being saturated. In order to replicate the colors shown in koikatsu, all colors and images are run through the color_to_KK and image_to_KK functions in [converttextures.py](https://github.com/FlailingFog/KK-Blender-Porter-Pack/blob/master/importing/converttextures.py) to convert the base colors to the "real" colors seen visually in the game. This process is also run on all Maintex images.
 
 Here's an example of a material before and after color saturation
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat11.png)
 
 ## Koikatsu dark color conversion
-The game uses a second color conversion process to automatically get dark colors for every light color. The skin_dark_color and clothes_dark_color functions in [modifymaterial.py](https://github.com/FlailingFog/KK-Blender-Porter-Pack/blob/master/importing/modifymaterial.py) are used to automatically obtain dark colors for every piece of clothing and create dark Maintex images. 
+The game uses a second color conversion process to automatically get dark colors for every light color. The skin_dark_color and clothes_dark_color functions in [modifymaterial.py](https://github.com/FlailingFog/KK-Blender-Porter-Pack/blob/master/importing/modifymaterial.py) are used to replicate this process in Blender and to automatically obtain dark colors for every piece of clothing and create dark Maintex images. 
 
 ## Cycles support
 Basic Cycles support is available by selecting "Use Cycles" in the panel. This will replace the Rim node group in the KK shaders with a Toon-like shader compatible with Cycles. The outline is disabled in the mode.
@@ -80,13 +104,6 @@ Basic Cycles support is available by selecting "Use Cycles" in the panel. This w
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat12.png)
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat13.png)
-
-## Lightning Boy Shader support
-Basic [Lightning Boy Shader support](https://lightningboystudio.gumroad.com/l/aYbiH) is available by selecting "Use LBS" in the panel. This will replace the Rim node group in the KK shaders with a group that contains an LBS setup. KKBP does not contain any LBS nodes, so LBS must be installed for this mode to work. Ambient occlusion and bloom are enabled in this mode.
-
-![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat14.png)
-
-![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat15.png)
 
 ## Normal blending methods
 A different normal blending method is available in the Raw Shading group. Enter it and find the node to use the Unity tech demo blending method. These blending methods [were taken from this page](https://blog.selfshadow.com/publications/blending-in-detail/)
