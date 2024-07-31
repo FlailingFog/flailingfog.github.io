@@ -72,19 +72,24 @@ Gag02 images are animated by continuosly changing the location of the UV map ove
 
 Gag eyes use drivers to determine what expression to display. When you activate a gag shapekey on the Body object, certain eye materials are moved back into the head to hide them, the gag eye mesh comes out to the front of the head and an image is displayed depending on which gag shapekey was activated.
 
-The default import comes with settings that make the face area behind the gag eyes look bad. Disabling the face eyeshadow intensity, setting the face rim to "None", and using the features in the "Permanent light / dark settings" or "Smoothing out the look of the face with Generated Face Normals (GFN)" sections below can help with that.
+The default import comes with settings that make the face area behind the gag eyes look bad. Disabling the face eyeshadow intensity, setting the face rim to "None", and using the features in the "Permanent light / dark settings" or "Smoothing out the look of the face" sections below can help with that.
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat7.png)
 
-## Smoothing out the look of the face with Generated Face Normals (GFN)
-Some face shapekeys can look pretty bad around the mouth with certain lighting
+## Smoothing out the look of the face
+Some face shapekeys can look pretty bad around the mouth in certain lighting conditions
 
-![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat8.jpg)
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat8.png)
 
-This can be avoided by changing the "Raw Shading" group in the face material to the "Raw Shading (Face)" group instead
+This can be avoided by changing the "Raw Shading" group in the face material to the "Raw Shading (smooth normals)" group instead. If you want smoothed normals for the body, make sure you use "Raw Shading (smooth body normals)" instead.
+
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat9.png)
 
-And shading discontinuities on the neck can be fixed by going to the Body material and sliding the "Use Normals" slider down to zero. Here's the same face again, but with GFN enabled:
+Then turn up the iterations and enable the modifier in the viewport / render view:
+
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat9p5.png)
+
+The model should have smoothed normals now
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat10.png)
 

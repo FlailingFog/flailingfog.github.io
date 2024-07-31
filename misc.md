@@ -19,19 +19,13 @@ On Windows, the Blender console is automatically opened when you import a model 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/misc3.png)
 
 ## Baking materials
-Using the "Bake material templates" button in the Export panel will convert all KKBP materials into PNG files. This is done by applying a geometry nodes modifier that flattens each mesh into a flat plane, then a picture is taken of the flat plane. The entire mesh is folded, so some very small gaps are left if there are transparent parts of the mesh. Because of this, a second filler plane is placed right under the folded mesh to fill in those gaps.
+Using the "Finalize materials" button in the Export panel will convert all KKBP materials into PNG files. This is done by applying a geometry nodes modifier that flattens each mesh into a flat plane, then a picture is taken of the flat plane. The entire mesh is folded, so some very small gaps are left if there are transparent parts of the mesh. Because of this, a second filler plane is placed right under the folded mesh to fill in those gaps.
 
 Because the mesh is folded, Z-fighting sometimes occurs and leads to a corrupt-looking image. This can be avoided by enabling the "Use old baker" checkbox in the KKBP panel. Using this option wil remove the folded mesh and only use the filler plane to bake images. The filler plane does not contain extra UV maps, so materials that rely on multiple UV maps like Hair will not bake properly with the old baker (for example the hair shine will not show up). Most other materials will bake properly with the old baker.
 
-Only visible objects will be baked, so if you have alternate outfit pieces or other outfits you want to bake, make sure they're visible in the Outliner before clicking the Bake button.
+Only visible objects will be finalized, so if you have alternate outfit pieces or other outfits you want to bake, make sure they're visible in the Outliner before clicking the Finalize button.
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/misc4.png)
-
-
-## Re-baking materials
-Using the "Bake material templates" button in the Export panel twice will not work because the baking script will skip over materials that have already been baked. If you need to rebake a material, you can set this mix shader to 0 for each material you want to rebake and they will be marked for rebaking. Setting the bake multiplier to 2 or 3 will allow you to re-bake the material at a higher resolution.
-
-![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/misc5.png)
 
 ## Working with Freestyle outlines
 Mark any faces you don't want to be freestyled as freestyle faces, enable Freestyle in Blender, and disable the outline modifier on the body object. Try using these freestyle settings if you don't want to experiment

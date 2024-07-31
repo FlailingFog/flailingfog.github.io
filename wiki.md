@@ -42,7 +42,7 @@ layout: default
 * [Special materials (Eyes)](material#special-materials-eyes)
 * [Special materials (Tears)](material#special-materials-tears)
 * [Special materials (Gag eyes)](material#special-materials-gag-eyes)
-* [Smoothing out the look of the face with Generated Face Normals (GFN)](material#smoothing-out-the-look-of-the-face-with-generated-face-normals-gfn)
+* [Smoothing out the look of the face](material#smoothing-out-the-look-of-the-face)
 * [Koikatsu color conversion](material#koikatsu-color-conversion)
 * [Koikatsu dark color conversion](material#koikatsu-dark-color-conversion)
 * [Cycles support](material#cycles-support)
