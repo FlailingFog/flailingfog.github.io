@@ -69,5 +69,5 @@ Then try adjusting the sliders boxed below
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/faq9.png)
 
 ## Blender crashed during import
-Try importing again. It does that every once in a while. The import process can take around 1GB of RAM and 2GB of VRAM (or around 3GB of RAM and 3GB of VRAM on complex cards with many accessories), so if you're low on either of those it may crash because of that too.
+Try importing again. It does that every once in a while. The import process can take around 1GB of RAM and 2GB of VRAM (or around 4.5GB of RAM and 3GB of VRAM on complex cards with many accessories), so if you're low on either of those it may crash because of that too.
 
