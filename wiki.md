@@ -5,16 +5,14 @@ layout: default
 ## Wiki contents
 
 ### Frequently asked questions
+* [I don't know what versions of the programs or addons to use](faq#i-dont-know-what-versions-of-the-programs-or-addons-to-use)
+* [I'm using the right versions but it's still not working](faq#im-using-the-right-versions-but-its-still-not-working)
 * [My top is missing](faq#my-top-is-missing)
 * [My clothes are missing](faq#my-clothes-are-missing)
 * [I'm getting fully white textures after importing my character](faq#im-getting-fully-white-textures-after-importing-my-character)
-* [I'm getting fully white textures, but only in certain places after importing my character](faq#im-getting-fully-white-textures-but-only-in-certain-places-after-importing-my-character)
+* [I'm getting fully white textures, but only in certain places](faq#im-getting-fully-white-textures-but-only-in-certain-places)
 * [My hair doesn't look right](faq#my-hair-doesnt-look-right)
-* [I got a "cf_pv_foot_L" / "cf_j_leg03_R" error during import](faq#i-got-a-cf_pv_foot_l--cf_j_leg03_r-error-during-import)
-* [I upgraded to KKBP 6.6+ and still got a "cf_pv_foot_L" / "cf_j_leg03_R" error during import](faq#i-upgraded-to-kkbp-66-and-still-got-a-cf_pv_foot_l--cf_j_leg03_r-error-during-import)
 * [Blender crashed during import](faq#blender-crashed-during-import)
-* [I don't know what versions of the programs or addons to use](faq#i-dont-know-what-versions-of-the-programs-or-addons-to-use)
-* [I'm using the right versions but it's still not working](faq#im-using-the-right-versions-but-its-still-not-working)
 
 ### Panel options
 * [Default panel settings](panel#default-panel-settings)
