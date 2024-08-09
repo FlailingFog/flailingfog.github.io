@@ -6,7 +6,7 @@ layout: default
 *The last known working configuration for **Koikatsu / Koikatsu Party** as of writing this text is HF Patch v3.28, Koikatsu 5.1, Blender 4.2.0, KKBP Importer 7.0.0, KKBP Exporter v4.30, mmd_tools 4.2.2  
 The last known working configuration for **Koikatsu Sunshine** as of writing this text is HF Patch for KKS v1.17, Koikatsu Sunshine 1.1.4, Blender 4.2.0, KKBP Importer 7.0.0, KKBP Exporter v4.21, mmd_tools 4.2.2*  
 
-1. Install the <a style="font-weight:bold" href="https://github.com/ManlyMarco/KK-HF_Patch"> HF Patch for Koikatsu</a>, or the [HF Patch for Koikatsu Sunshine](https://github.com/ManlyMarco/KKS-HF_Patch).  
+1. Install the <a style="font-weight:bold" href="https://github.com/ManlyMarco/KK-HF_Patch"> HF Patch for Koikatsu</a>, or the <a style="font-weight:bold" href="https://github.com/ManlyMarco/KKS-HF_Patch"> HF Patch for Koikatsu Sunshine</a>.  
 **Pre-modded repacks will not work** unless you update your plugins with KKManager or install the HF patch
 1. Find your Koikatsu install directory and drag the KKBP exporter into the /bepinex/plugins/ folder
 1. Start Koikatsu and open the Character Maker
@@ -14,7 +14,7 @@ The last known working configuration for **Koikatsu Sunshine** as of writing thi
 ![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/exportpanel.png)
 1. Click the "Export Model for KKBP" button at the top of the screen. This may take a few minutes depending on your computer hardware. A folder in your Koikatsu install directory will popup when the export is finished
 1. Open Blender 4.2. **Other versions are not guaranteed to work**
-1. Install [mmd_tools](https://extensions.blender.org/add-ons/mmd-tools/) in Blender
+1. Install <a style="font-weight:bold" href="https://extensions.blender.org/add-ons/mmd-tools/">mmd_tools</a> in Blender
 1. Install KKBP Importer 7.0.0 in Blender
 1. You'll see this UI in Blender now. Click on one of the buttons to allow KKBP to download an older version of blender  
 ![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/importpanel1.png)
@@ -28,7 +28,7 @@ The last known working configuration for **Koikatsu Sunshine** as of writing thi
 ![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/importpanel5.png)
 1. If there were no errors, you can start using the model as is, but it is recommended to finalize the materials first. If you use the model as is, it will take a long time to compile all the shaders. If you finalize the materials then the shaders will compile very quickly. It also makes the shaders compile quickly if you decide to reimport the same model. Finalizing the materials can take a few minutes depending on your hardware  
 ![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/importpanel6.png)
-1. If something doesn't look right and you don't see any errors in the log, check the [Wiki Home on the sidebar](wiki).
+1. If something doesn't look right and you don't see any errors in the log, check the <a style="font-weight:bold" href="wiki">Wiki Home on the sidebar</a>.
 
 #### Exporting from Blender to fbx:
 
