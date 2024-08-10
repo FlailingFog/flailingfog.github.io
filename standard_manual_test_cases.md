@@ -2,6 +2,8 @@
 layout: default
 ---
 
+# Test cases
+
 1. In Koikatsu, export Chika with all 8 outfits (default exporter settings)
     * Also export with only "Export Single Outfit" enabled
     * Also export with only "Export Variations" and "Export Hit Meshes" checked
