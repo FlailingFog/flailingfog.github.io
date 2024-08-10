@@ -25,14 +25,6 @@ The KKBP armature features the following:
 * A heel IK
 * A center bone that lets you move all bones at once
 
-## Koikatsu Armature
-
-The Koikatsu Armature is an armature that tries to match the bone structure of the in-game armature. This armature does not come with IKs and is FK only.
-
-## PMX Armature
-
-The PMX Armature is the armature that comes straight out of the KKBP exporter. This armature does not come with IKs and is FK only.
-
 ## Rigify Armature
 
 The Rigify armature is the best armature to use **if you plan on using the model in Blender**.  
@@ -64,3 +56,11 @@ Check [this page for information specific to the KKBP Rigify armature](https://g
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/arm5.gif)
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/arm6.png)
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/arm7.png)
+
+## Koikatsu Armature
+
+The Koikatsu Armature is an armature that tries to match the bone structure of the in-game armature. This armature does not come with IKs and is FK only.
+
+## PMX Armature
+
+The PMX Armature is the armature that comes straight out of the KKBP exporter. This armature does not come with IKs and is FK only.

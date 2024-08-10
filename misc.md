@@ -18,7 +18,7 @@ On Windows, the Blender console is automatically opened when you import a model 
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/misc3.png)
 
-## Baking materials
+## Finalizing materials
 Using the "Finalize materials" button in the Export panel will convert all KKBP materials into PNG files. This is done by applying a geometry nodes modifier that flattens each mesh into a flat plane, then a picture is taken of the flat plane. The entire mesh is folded, so some very small gaps are left if there are transparent parts of the mesh. Because of this, a second filler plane is placed right under the folded mesh to fill in those gaps.
 
 Because the mesh is folded, Z-fighting sometimes occurs and leads to a corrupt-looking image. This can be avoided by enabling the "Use old baker" checkbox in the KKBP panel. Using this option wil remove the folded mesh and only use the filler plane to bake images. The filler plane does not contain extra UV maps, so materials that rely on multiple UV maps like Hair will not bake properly with the old baker (for example the hair shine will not show up). Most other materials will bake properly with the old baker.
