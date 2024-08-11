@@ -12,6 +12,9 @@ If you expand KKBP in Blender's addon menu, you can set default settings for the
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/panel1.png)
 
 ## Extras panel
+
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/panel2.png)
+
 * Instructions for exporting studio objects from the game and importing them using the button in the panel [can be found here](https://www.youtube.com/watch?v=PeryYTsAN6E)
 * Instructions for exporting animations from the game and applying them using the button in the panel can be found [here if you prefer text](https://github.com/FlailingFog/KK-Blender-Porter-Pack/blob/master/extras/animationlibrary/createanimationlibrary.py) or [here if you prefer video](https://www.youtube.com/watch?v=Ezsy6kwgBE0)
 * Instructions for exporting maps from the game and importing them using the button in the panel [can be found here](https://github.com/FlailingFog/KK-Blender-Porter-Pack/blob/master/extras/animationlibrary/createmapassetlibrary.py) 

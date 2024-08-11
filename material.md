@@ -39,7 +39,11 @@ To finalize the material again, just click the "Finalize Materials" button on th
 
 
 ## Plain Maintex vs Colored Maintex
-Plain Maintex files are a component that make up the Maintex you see in game. The Plain Maintex is combined with the colors you set in game and the colormask texture. All three combined create the full Colored Maintex. Colored Maintex files from the KKBP Exporter already have the colors applied and also include any additional overlays, so it combines the Plain Maintex + Colormask files + colors + overlay files together. If you want to change the colors on the fly, you can swap to the plain maintex by setting the "Use colored maintex" and "Ignore colormask" sliders below to 0 instead of 1.
+Plain Maintex files are a component that make up the Maintex you see in game. The Plain Maintex is combined with the colors you set in game and the colormask texture. All three combined create the full Colored Maintex. 
+
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat3p1.png)
+
+Colored Maintex files from the KKBP Exporter already have the colors applied and also include any additional overlays, so it combines the Plain Maintex + Colormask files + colors + overlay files together. If you want to change the colors on the fly, you can swap to the plain maintex by setting the "Use colored maintex" and "Ignore colormask" sliders below to 0 instead of 1.
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat3.png)
 
@@ -85,7 +89,7 @@ This can be avoided by changing the "Raw Shading" group in the face material to 
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat9.png)
 
-Then turn up the iterations and enable the modifier in the viewport / render view:
+Then turn up the iterations and enable the geometry nodes modifier in the viewport / render view:
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat9p5.png)
 
@@ -118,7 +122,7 @@ A different normal blending method is available in the Raw Shading group. Enter 
 
 ## Normal quality settings
 Normals are set to lower quality by default to increase animation playback performance. To change to higher quality normals, just enter the Raw Shading group, connect the higher quality output node and unmute the node by selecting it and pressing the M key.
-This is done automatically when baking materials.
+This is done automatically when baking materials so you don't need to worry about it if you plan on exporting the model from blender.
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat17.png)
 
