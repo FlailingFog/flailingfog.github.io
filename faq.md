@@ -9,7 +9,7 @@ KKBP has been updated many times to keep up with newer Blender versions and is l
 
 |Blender version|Last working KKBP version|PMX Importer dependency version|Video guide link|
 |---|---|---|---|
-4.2.0|7.0.0|4.2.2|--|
+4.2.0|7.0.0|mmd_tools 4.2.2|--|
 |3.6.9|6.6.3|mmd_tools 2.9.2|[Here](https://www.youtube.com/playlist?list=PLhiuav2SCuvc-wbexi2vwSnVHnZFwkYNP)|
 |3.5|6.5.0|mmd_tools 2.9.2|[Here](https://www.youtube.com/playlist?list=PLhiuav2SCuvc-wbexi2vwSnVHnZFwkYNP)|
 |3.4|6.4.2|mmd_tools 2.9.2|[Here](https://www.youtube.com/playlist?list=PLhiuav2SCuvc-wbexi2vwSnVHnZFwkYNP)|

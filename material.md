@@ -21,6 +21,7 @@ When you click the "Finalize Materials" button on the KKBP panel, all materials 
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat2p2.png)
 
+## Updating a finalized material
 If you want to go back to the heavyweight material to edit it again, you can set the material back to the -ORG version of the material.
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat2p3.png)

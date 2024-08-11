@@ -41,6 +41,6 @@ Shapekeys are reverted to their default values during export. Enable this option
 
 ### Keep current pose (KK only)
 
-The pose is reset to a T pose during export. Enable this option to keep the pose you have selected in the character maker to the base mesh. Because a pose is already applied to the armature, the armature will not work correctly in blender. This setting may be useful for 3D prints of koikatsu models. This setting will force the Koikatsu armature in blender. See the picture below for an example of a pose being applied to the model. 
+The pose is reset to a T pose during export. Enable this option to keep the pose you have selected in the character maker to the base mesh. Because a pose is already applied to the armature, the armature will not work correctly in blender. This setting may be useful for 3D prints of koikatsu models. This exporter setting will force the Koikatsu armature in blender. See the picture below for an example of a pose being applied to the model. 
 
 ![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/exporter4.png)
