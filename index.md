@@ -13,7 +13,7 @@ The last known working configuration for **Koikatsu Sunshine** as of writing thi
 1. You'll see this UI at the top now. If you are using KKS, you'll get the left panel. If you are using KK you'll get the right panel  
 ![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/exportpanel.png)
 1. Click the "Export Model for KKBP" button at the top of the screen. This may take a few minutes depending on your computer hardware. A folder in your Koikatsu install directory will popup when the export is finished
-1. Open Blender 4.2. **Other versions are not guaranteed to work**
+1. Open Blender 4.2. **Other versions are not guaranteed to work. [Check the version table if you are not using Blender 4.2](faq)**
 1. Install <a style="font-weight:bold" href="https://extensions.blender.org/add-ons/mmd-tools/">mmd_tools</a> in Blender
 1. Install <a style="font-weight:bold" href="https://github.com/FlailingFog/KK-Blender-Porter-Pack/releases">KKBP Importer 7.0.0</a> in Blender
 1. You'll see this UI in Blender now. Click on one of the buttons to allow KKBP to download an older version of blender  
