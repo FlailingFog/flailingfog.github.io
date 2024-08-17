@@ -21,7 +21,7 @@ KKBP has been updated many times to keep up with newer Blender versions and is l
 |2.82.7|V2|[This outdated mmd_tools version](https://github.com/powroupi/blender_mmd_tools?tab=readme-ov-file)|--|--|[Here](https://www.youtube.com/playlist?list=PLhiuav2SCuvfx_IJw2TnYmPdWYwIzo7SO)|
 
 ## I'm using the right versions but it's still not working
-**Some heavily modded characters will not import correctly.** Custom body mods, face mods and other mods that change body material names or shapekey names from the default will likely not work. Try exporting the default character that you get when you startup the character creator **with only the "Export Single Outfit" checkbox checked**, and double check the table for choosing the right version at the top of the page. If that works, try adding back each piece of clothing / hair until the item that causes the issue is found. If that didn't work, triple check you installed everything in the version table at the top of the page.
+**Some heavily modded characters will not import correctly.** Custom body mods, face mods and other mods that change body material names or shapekey names from the default will likely not work. Try exporting the default character that you get when you startup the character creator **with only the "Export Single Outfit" checkbox checked**, and double check the table for choosing the right version at the top of the page. If that works, try adding back each piece of clothing / hair until the item that causes the issue is found. If even the default character doesn't work, triple check you installed everything in the version table at the top of the page.
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/faq10.png)
 
