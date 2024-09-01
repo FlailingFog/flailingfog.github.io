@@ -22,15 +22,19 @@ This will export the hit mesh. An example of the hit mesh is shown below.
 
 ### Export single outfit
 
-This will make the exporter only export a single outfit, so if you only want one outfit this will dramatically increase your koikatsu export times and blender import times.
+This will make the exporter only export the current outfit, so if you only want one outfit this will dramatically increase your koikatsu export times and blender import times.
 
 ### Export without physics
 
 Some outfits rely on in-game physics to look correct. Enable this option to disable the in-game physics during export. This may make certain outfits look weird because of the lack of physics, but it is useful if you want to apply your own physics to the model in blender.
 
+![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/exporter2.1.png)
+
 ### Enable pushups
 
-Pushups are disabled during export. Enable this option to re-enable pushups.
+Outfit pushups (shown below) are disabled during export. Enable this option on the exporter to re-enable pushups.
+
+![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/exporter2.2.png)
 
 ### Enable shapekeys
 

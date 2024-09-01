@@ -6,7 +6,7 @@ layout: default
 
 
 ## The KKBP material setup
-Below is an overview of the KKBP material template. All textures in the .pmx export folder are loaded to the green textures node group below. The texture positions are set using the sliders in the purple group below. The textures are used in the Shader group in the middle to create light and dark versions of the material. The material knows when to show the light or dark version of the texture from the bsdf shader in the Raw toon shading group. A rim is added to the output if it is enabled. If the material has been finalized, the baked material png will be loaded at the end too.
+Below is an overview of the KKBP material template. All textures in the .pmx export folder are loaded to the green textures node group below. The texture positions are set using the sliders in the purple group below. The textures are used in the Shader group in the middle to create light and dark versions of the material. The material knows when to show the light or dark version of the texture from the bsdf shader in the Raw toon shading group. A rim is added to the output if it is enabled. If the material has been finalized using the "Finalize Materials" button in the KKBP panel, the baked material png will be loaded at the end too.
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat1.png)
 
@@ -49,7 +49,7 @@ Colored Maintex files from the KKBP Exporter already have the colors applied and
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat3.png)
 
 ## Special materials (Outlines)
-Outlines have a different material setup. If an alphamask is available for this material, the alphamask's red channel will be used to determine where the outline should be transparent. If it is not available, the maintex will be used instead. If neither are available, the outline will be visible everywhere on the material.
+Outlines have a different material setup. If an alphamask is available for this material, the alphamask's red channel will be used to determine where the outline should be transparent. If it is not available, the maintex alpha channel will be used for determining transparency instead. If neither are available, the outline will be visible everywhere on the material.
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat4.png)
 
@@ -62,7 +62,7 @@ Eyes have a special material setup that allows you to change both of them at onc
 
 ## Special materials (Hair)
 Hair has a special material setup that allows you to change the like-colored hair materials at the same time.
-See the screenshot in the "Special materials (Eyes)" section above for how to give specific pieces of hair different colors.
+The KKBP importer will attempt to find like-colored hair and automatically group them together. Check the screenshot in the "Special materials (Eyes)" section above for how to give specific pieces of hair different colors.
 
 ## Special materials (Tears)
 Tears have a special material that uses a gradient to get a look similar to the in-game one. You can make the tears use an HDRI or a flat color instead by using the sliders in the Tears material.
@@ -86,7 +86,7 @@ Some face shapekeys can look pretty bad around the mouth in certain lighting con
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat8.png)
 
-This can be avoided by changing the "Raw Shading" group in the face material to the "Raw Shading (smooth normals)" group instead. If you want smoothed normals for the body, make sure you use "Raw Shading (smooth body normals)" instead.
+This can be avoided by changing the "Raw Shading" group in the face material to the "Raw Shading (smooth normals)" group instead. If you want smoothed normals for the body, make sure you use "Raw Shading (smooth body normals)" instead. 
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat9.png)
 
@@ -97,6 +97,8 @@ Then turn up the iterations and enable the geometry nodes modifier in the viewpo
 The model should have smoothed normals now
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat10.png)
+
+These smoothing node groups were [taken from this page](https://github.com/FlailingFog/KK-Blender-Porter-Pack/issues/563)
 
 ## Koikatsu color conversion
 The colors you see in Koikatsu are not the real colors being used; they're actually being saturated. In order to replicate the colors shown in koikatsu, all colors and images are run through the color_to_KK and image_to_KK functions in [converttextures.py](https://github.com/FlailingFog/KK-Blender-Porter-Pack/blob/master/importing/converttextures.py) to convert the base colors to the "real" colors seen visually in the game. This process is also run on all Maintex images.
@@ -116,7 +118,7 @@ Basic Cycles support is available by selecting "Use Cycles" in the panel. This w
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat13.png)
 
 ## Normal blending methods
-A different normal blending method is available in the Raw Shading group. Enter it and find the node to use the Unity tech demo blending method. These blending methods [were taken from this page](https://blog.selfshadow.com/publications/blending-in-detail/)
+A different normal blending method is available in the Raw Shading group. Enter it and find the node to use the Unity tech demo blending method. These blending methods [were taken from this page](https://blog.selfshadow.com/publications/blending-in-detail/) and [also this page](https://github.com/FlailingFog/KK-Blender-Porter-Pack/issues/166)
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat16.png)
 
