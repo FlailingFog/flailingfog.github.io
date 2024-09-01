@@ -32,6 +32,7 @@ The last known working configuration for **Koikatsu Sunshine** as of writing thi
 1. If there were no errors, you can start using the model as is, but it is recommended to finalize the materials first. If you use the model as is, it can take a long time to compile all the shaders. If you finalize the materials then the shaders will compile very quickly. It also makes the shaders compile quickly if you decide to reimport the same model. Finalizing the materials can take a few minutes depending on your hardware  
 ![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/importpanel6.png)
 1. If something doesn't look right and you don't see any errors in the log, check the <a style="font-weight:bold" href="wiki">Wiki Home on the sidebar</a>.
+1. If you got an error during import, check the <a style="font-weight:bold" href="faq">FAQ</a>, or check the issues page on the Github repo.
 
 #### Exporting from Blender to fbx:
 
