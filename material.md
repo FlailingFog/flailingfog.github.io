@@ -49,7 +49,7 @@ Colored Maintex files from the KKBP Exporter already have the colors applied and
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat3.png)
 
 ## Special materials (Outlines)
-Outlines have a different material setup. If an alphamask is available for this material, the alphamask's red channel will be used to determine where the outline should be transparent. If it is not available, the maintex alpha channel will be used for determining transparency instead. If neither are available, the outline will be visible everywhere on the material.
+Outlines have a different material setup. If an alphamask is available for this material, the alphamask's red channel will be used to determine where the outline should be transparent. If it is not available, the maintex alpha channel will be used for determining transparency instead. If neither are available, the outline will be visible everywhere on the material. The outline materials will not be converted to png files when you click the Finalize Materials button.
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat4.png)
 
@@ -60,14 +60,27 @@ Eyes have a special material setup that allows you to change both of them at onc
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat5.png)
 
+## Special materials (Body)
+The body has a transparency mask to prevent it from clipping through some clothes [Check here for making the body visible](https://flailingfog.github.io/faq). 
+
+If you are finding that the body is still transparent in the wrong areas, you can either edit the body alpha mask (location shown below), or load a different body_AM file from your pmx export folder. The first body alpha mask for the first outfit is automatically loaded in (cf_m_body_AM.png), so if you switch to a different outfit you'll have to switch the body mask to the right one (ex. body_AM_01 for outfit 01, 02 for outfit 02, etc).
+
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat5p4.png)
+
 ## Special materials (Hair)
-Hair has a special material setup that allows you to change the like-colored hair materials at the same time.
-The KKBP importer will attempt to find like-colored hair and automatically group them together. Check the screenshot in the "Special materials (Eyes)" section above for how to give specific pieces of hair different colors.
+Hair has a special material setup that allows you to change the like-colored hair materials at the same time. These are usually labeled as "Hair shader". The KKBP importer will attempt to find like-colored hair and automatically group them together with the Hair shader node group. If a hair material is a different color, or it has a main texture the node group will be made unique. Check the screenshot in the "Special materials (Eyes)" section above for how to give specific pieces of hair different colors.
+
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat5p5.png)
 
 ## Special materials (Tears)
 Tears have a special material that uses a gradient to get a look similar to the in-game one. You can make the tears use an HDRI or a flat color instead by using the sliders in the Tears material.
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat6.png)
+
+Tears can be activated in the shapekey panel
+
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat6p1.png)
+
 
 ## Special materials (Gag eyes)
 There are three sets of Gag eyes: Gag00, Gag01 and Gag02  
@@ -80,6 +93,10 @@ Gag eyes use drivers to determine what expression to display. When you activate 
 The default import comes with settings that make the face area behind the gag eyes look bad. Disabling the face eyeshadow intensity, setting the face rim to "None", and using the features in the "Permanent light / dark settings" or "Smoothing out the look of the face" sections below can help with that.
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat7.png)
+
+Gag eyes can be activated in the shapekey panel
+
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat6p1.png)
 
 ## Smoothing out the look of the face
 Some face shapekeys can look pretty bad around the mouth in certain lighting conditions
@@ -108,7 +125,7 @@ Here's an example of a material before and after color saturation
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/mat11.png)
 
 ## Koikatsu dark color conversion
-The game uses a second color conversion process to automatically get dark colors for every light color. The skin_dark_color and clothes_dark_color functions in [modifymaterial.py](https://github.com/FlailingFog/KK-Blender-Porter-Pack/blob/master/importing/modifymaterial.py) are used to replicate this process in Blender and to automatically obtain dark colors for every piece of clothing and create dark Maintex images. 
+The game uses a second color conversion process to automatically get dark colors for every light color. The skin_dark_color and clothes_dark_color functions in [modifymaterial.py](https://github.com/FlailingFog/KK-Blender-Porter-Pack/blob/master/importing/modifymaterial.py) are used to replicate this process in Blender and to automatically obtain dark colors for every piece of clothing and create dark Maintex images. If this is disabled in the panel, you'll only get the light colors.
 
 ## Cycles support
 Basic Cycles support is available by selecting "Use Cycles" in the panel. This will replace the Rim node group in the KK shaders with a Toon-like shader compatible with Cycles. The outline is disabled in the mode.

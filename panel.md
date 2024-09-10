@@ -4,11 +4,11 @@ layout: default
 
 # Panel options
 
-You can mouse over most panel options to get an explanation of each item.  
-**This page will only cover things that are not immediately obvious from the explanations built into the panel**, so be sure to check those.
+**You can mouse over most panel options to get an explanation of each item.**  
+This page will only cover things that are not immediately obvious from the explanations built into the panel, so be sure to check those.
 
 ## Default panel settings
-If you expand KKBP in Blender's addon menu, you can set default settings for the panel (so you don't have to set them each time you import a character). If you don't want to let KKBP download an older version of Blender automatically, you can manually download any version between Blender 2.80 and Blender 3.6 yourself and put the path to blender.exe in the box below  
+If you expand KKBP in Blender's addon menu, you can set default settings for the panel (so you don't have to set them each time you restart Blender). If you don't want to let KKBP download an older version of Blender automatically, you can manually download any version between Blender 2.80 and Blender 3.6 yourself and put the direct path to blender.exe in the box below  
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/panel1.png)
 
 ## Extras panel

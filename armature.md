@@ -4,18 +4,6 @@ layout: default
 
 # Armature
 
-## Bone Collections
-The KKBP armature hides some bone collections by default so the view is less cluttered. These bones can be found in each collection.  
-![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/arm1.png)
-
-The bone collection panel can be found by selecting the armature and looking in the Data tab. You can click the eye next to a collection to hide/show it.  
-![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/arm2.png)
-
-## Joint corrections
-The KKBP and Rigify armatures make use of helper bones to make the mesh look better when it deforms. These helper bones can be found in bone collections 2 and 3 of the KKBP armature. Some joint corrections are implemented by giving the helper bones bone contraints and other corrections are implemented by giving the helper bones drivers to automatically set their location and rotation when a specific bone is rotated. An example of a joint correction bone is shown below. In the default position, the cf_s_elboback_L bone stays in place. When the arm is bent the location drivers for cf_s_elboback_L cause the bone to move out and deform the arm properly. The third image is an example of what the arm would look like without the location drivers enabled. **Joint corrections are not carried over when you export the model, so you will likely experience weird bends like this unless you re-implement the drivers in your target program.** A list of all helper bones can be found in the create_joint_drivers function of [modifyarmature.py](https://github.com/FlailingFog/KK-Blender-Porter-Pack/blob/master/importing/modifyarmature.py). 
-
-![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/arm3.png)
-
 ## KKBP Armature
 
 The KKBP armature is the best armature to use **if you plan on exporting the model**.  
@@ -64,3 +52,16 @@ The Koikatsu Armature is an armature that tries to match the bone structure of t
 ## PMX Armature
 
 The PMX Armature is the armature that comes straight out of the KKBP exporter. This armature does not come with IKs and is FK only.
+
+## Bone Collections
+The KKBP armature hides some bone collections by default so the view is less cluttered. These bones can be found in each collection.  
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/arm1.png)
+
+The bone collection panel can be found by selecting the armature and looking in the Data tab. You can click the eye next to a collection to hide/show it.  
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/arm2.png)
+
+## Joint corrections
+The KKBP and Rigify armatures make use of helper bones to make the mesh look better when it deforms. These helper bones can be found in bone collections 2 and 3 of the KKBP armature. Some joint corrections are implemented by giving the helper bones bone contraints and other corrections are implemented by giving the helper bones drivers to automatically set their location and rotation when a specific bone is rotated. An example of a joint correction bone is shown below. In the default position, the cf_s_elboback_L bone stays in place. When the arm is bent the location drivers for cf_s_elboback_L cause the bone to move out and deform the arm properly. The third image is an example of what the arm would look like without the location drivers enabled. **Joint corrections are not carried over when you export the model, so you will likely experience weird bends like this unless you re-implement the drivers in your target program.** A list of all helper bones can be found in the create_joint_drivers function of [modifyarmature.py](https://github.com/FlailingFog/KK-Blender-Porter-Pack/blob/master/importing/modifyarmature.py). 
+
+![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/arm3.png)
+
