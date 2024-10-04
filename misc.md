@@ -18,6 +18,9 @@ On Windows, the Blender console is automatically opened when you import a model 
 
 ![image](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/misc3.png)
 
+## Importing multiple characters
+The KKBP importer can't import more than one character into the same file. You have to import characters separately, then merge them into one file by using File > Append, then append the character collection from the second character's .blend file.
+
 ## Finalizing materials
 Using the "Finalize materials" button in the Export panel will convert all KKBP materials into PNG files. This is done by applying a geometry nodes modifier that flattens each mesh into a flat plane, then a picture is taken of the flat plane. The entire mesh is folded, so some very small gaps are left if there are transparent parts of the mesh. Because of this, a second filler plane is placed right under the folded mesh to fill in those gaps.
 

@@ -9,7 +9,7 @@ KKBP has been updated many times to keep up with newer Blender versions and is l
 
 |Blender version|Last working KKBP version|PMX Importer dependency version|Koikatsu HF Patch version|Koikatsu Sunshine HF Patch version|Video guide link|
 |---|---|---|---|---|---|
-4.2.0 LTS|7.0.0|mmd_tools 4.2.2|HF Patch 3.28|HF Patch for KKS 1.17|[Here](https://www.youtube.com/playlist?list=PLhiuav2SCuveWvSwKg18l6mDSl5xl4x7o)|
+4.2.2 LTS|7.0.1|mmd_tools 4.2.2|HF Patch 3.28|HF Patch for KKS 1.17|[Here](https://www.youtube.com/playlist?list=PLhiuav2SCuveWvSwKg18l6mDSl5xl4x7o)|
 |3.6.9 LTS|6.6.3|mmd_tools 2.9.2|HF Patch 3.22|HF Patch for KKS 1.7|[Here](https://www.youtube.com/playlist?list=PLhiuav2SCuvc-wbexi2vwSnVHnZFwkYNP)|
 |3.5|6.5.0|mmd_tools 2.9.2|HF Patch 3.22|HF Patch for KKS 1.7|[Here](https://www.youtube.com/playlist?list=PLhiuav2SCuvc-wbexi2vwSnVHnZFwkYNP)|
 |3.4|6.4.2|mmd_tools 2.9.2|HF Patch 3.22|HF Patch for KKS 1.7|[Here](https://www.youtube.com/playlist?list=PLhiuav2SCuvc-wbexi2vwSnVHnZFwkYNP)|
