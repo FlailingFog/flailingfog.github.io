@@ -18,7 +18,7 @@ The last known working configuration for **Koikatsu Sunshine** as of writing thi
 1. Click the "Export Model for KKBP" button at the top of the screen. This may take a few minutes depending on your computer hardware. A folder in your Koikatsu install directory will popup when the export is finished
 1. Open Blender 4.2. **Other versions are not guaranteed to work.**
 1. Install <a style="font-weight:bold" href="https://extensions.blender.org/add-ons/mmd-tools/">mmd_tools</a> in Blender
-1. Install <a style="font-weight:bold" href="https://github.com/FlailingFog/KK-Blender-Porter-Pack/releases">KKBP Importer 7.0.0</a> in Blender
+1. Install <a style="font-weight:bold" href="https://github.com/FlailingFog/KK-Blender-Porter-Pack/releases">KKBP Importer 7.1.0</a> in Blender
 1. After you install both addons, you can click the "Import model" button in the KKBP panel  
 ![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/importpanel2.png)
 1. Choose the .pmx file from the export folder 
