@@ -66,7 +66,7 @@ layout: default
 ### Misc
 * [Getting info from the Koikatsu console](misc#getting-info-from-the-koikatsu-console)
 * [Getting info from the Blender console](misc#getting-info-from-the-blender-console)
-* [Finalizing materials info](misc#baking-materials)
+* [Finalizing materials info](misc#finalizing-materials)
 * [Working with Freestyle outlines](misc#working-with-freestyle-outlines)
 * [Armatures in Unity](misc#armatures-in-unity)
 * [Springbones in Unity](misc#springbones-in-unity)
