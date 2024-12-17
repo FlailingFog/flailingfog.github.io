@@ -19,9 +19,9 @@ layout: default
 * [Export hit meshes option](panel#export-hit-meshes)
 * [Export single outfit](panel#export-single-outfit)
 * [Export without physics](panel#export-without-physics)
-* [Enable pushups (KK only)](panel#enable-pushups-kk-only)
-* [Enable shapekeys (KK only)](panel#enable-shapekeys-kk-only)
-* [Keep current pose (KK only)](panel#keep-current-pose-kk-only)
+* [Enable pushups](panel#enable-pushups)
+* [Enable shapekeys](panel#enable-shapekeys)
+* [Keep current pose](panel#keep-current-pose)
 
 ### Import panel options
 * [Default panel settings](panel#default-panel-settings)
