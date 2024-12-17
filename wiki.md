@@ -15,13 +15,13 @@ layout: default
 * [Blender crashed during import](faq#blender-crashed-during-import)
 
 ### Export panel options
-* [Export variations option](panel#export-variations)
-* [Export hit meshes option](panel#export-hit-meshes)
-* [Export single outfit](panel#export-single-outfit)
-* [Export without physics](panel#export-without-physics)
-* [Enable pushups](panel#enable-pushups)
-* [Enable shapekeys](panel#enable-shapekeys)
-* [Keep current pose](panel#keep-current-pose)
+* [Export variations option](exporter#export-variations)
+* [Export hit meshes option](exporter#export-hit-meshes)
+* [Export single outfit](exporter#export-single-outfit)
+* [Export without physics](exporter#export-without-physics)
+* [Enable pushups](exporter#enable-pushups)
+* [Enable shapekeys](exporter#enable-shapekeys)
+* [Keep current pose](exporter#keep-current-pose)
 
 ### Import panel options
 * [Default panel settings](panel#default-panel-settings)
