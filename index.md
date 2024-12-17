@@ -6,8 +6,8 @@ layout: default
 
 ## Usage Instructions for V7
 
-*The last known working configuration for **Koikatsu / Koikatsu Party** as of writing this text is HF Patch v3.28, Koikatsu 5.1, Blender 4.2.2, KKBP Importer 7.1.0, KKBP Exporter v4.30, mmd_tools 4.2.2  
-The last known working configuration for **Koikatsu Sunshine** as of writing this text is HF Patch for KKS v1.17, Koikatsu Sunshine 1.1.4, Blender 4.2.2, KKBP Importer 7.1.0, KKBP Exporter v4.30, mmd_tools 4.2.2*  
+*The last known working configuration for **Koikatsu / Koikatsu Party** as of writing this text is HF Patch v3.28, Koikatsu 5.1, Blender 4.2.2, KKBP Importer 7.2.0, KKBP Exporter v4.30, mmd_tools 4.2.2  
+The last known working configuration for **Koikatsu Sunshine** as of writing this text is HF Patch for KKS v1.17, Koikatsu Sunshine 1.1.4, Blender 4.2.2, KKBP Importer 7.2.0, KKBP Exporter v4.30, mmd_tools 4.2.2*  
 
 1. Install the <a style="font-weight:bold" href="https://github.com/ManlyMarco/KK-HF_Patch"> HF Patch for Koikatsu</a>, or the <a style="font-weight:bold" href="https://github.com/ManlyMarco/KKS-HF_Patch"> HF Patch for Koikatsu Sunshine</a>.  
 **Pre-modded repacks will not work** unless you update with the repack's auto-updater or install the HF patch. [Click here for workaround #1.](https://github.com/FlailingFog/KK-Blender-Porter-Pack/issues/523)  [Click here for workaround #2.](https://github.com/FlailingFog/KK-Blender-Porter-Pack/issues/560)
@@ -18,7 +18,7 @@ The last known working configuration for **Koikatsu Sunshine** as of writing thi
 1. Click the "Export Model for KKBP" button at the top of the screen. This may take a few minutes depending on your computer hardware. A folder in your Koikatsu install directory will popup when the export is finished
 1. Open Blender 4.2. **Other versions are not guaranteed to work.**
 1. Install <a style="font-weight:bold" href="https://extensions.blender.org/add-ons/mmd-tools/">mmd_tools</a> in Blender
-1. Install <a style="font-weight:bold" href="https://github.com/FlailingFog/KK-Blender-Porter-Pack/releases">KKBP Importer 7.1.0</a> in Blender
+1. Install <a style="font-weight:bold" href="https://github.com/FlailingFog/KK-Blender-Porter-Pack/releases">KKBP Importer 7.2.0</a> in Blender
 1. After you install both addons, you can click the "Import model" button in the KKBP panel  
 ![ ](https://raw.githubusercontent.com/FlailingFog/flailingfog.github.io/master/assets/images/importpanel2.png)
 1. Choose the .pmx file from the export folder 
